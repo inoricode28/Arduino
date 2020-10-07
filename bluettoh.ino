@@ -1,6 +1,6 @@
 #include<SoftwareSerial.h>
 
-// se define al Pin2 como RX, Pin3 como TX
+//Se define al Pin2 como RX, Pin3 como TX
 SoftwareSerial mySerial(2,3);
 
 void setup()
@@ -10,7 +10,7 @@ void setup()
 Serial.begin(9600);
 mySerial.begin(9600);
 
-//se configura los pines de entrada y salida
+//Se configura los pines de entrada y salida
 pinMode(4,OUTPUT);
 pinMode(5,OUTPUT);
 pinMode(6,OUTPUT);
@@ -20,7 +20,7 @@ pinMode(11, OUTPUT);
 pinMode(10, OUTPUT);
 pinMode(9, OUTPUT);
 
-// inicializa el estdo de los LEDs
+//Inicializa el estado de los LEDs
 digitalWrite(12,LOW);
 digitalWrite(11,LOW);
 digitalWrite(10,LOW);
@@ -47,8 +47,8 @@ if(c=='y') Girar();
 
 }
 //*************************************
-//***********************************
-//*** FUNCIONES****
+//*************************************
+//*** FUNCIONES************************
 
 void Adelante()
 {
@@ -82,7 +82,8 @@ void Izquierda(){
   digitalWrite(10, LOW);
   digitalWrite(9, HIGH);
    
-  }void Detener(){
+  }
+void Detener(){
 
  digitalWrite(12, LOW);
   digitalWrite(11, LOW);
@@ -91,14 +92,12 @@ void Izquierda(){
   
   }
 
-  void Girar(){
+void Girar(){
   digitalWrite(12, HIGH);
   digitalWrite(11, LOW);
   digitalWrite(10, HIGH);
   digitalWrite(9, LOW); 
-    
-    
-    
-    }
+     
+ }
 
  
