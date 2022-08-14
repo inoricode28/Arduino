@@ -1,0 +1,5 @@
+Debes agregar esta ruta a tu arduino en: Archivo--> Preserencias
+depues de "board=nano"
+
+build.path=C:\Users\Angelion\Desktop\vb.net\Proteus\Arduino\HEX
+build.verbose=true
